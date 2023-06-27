@@ -5,18 +5,9 @@
     padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
 }
-  
-.row {
-    display: flex;
-    justify-content: center;
-    height: 70px;
-}
-  
-.col-10 {
-    flex-grow: 2;
-    min-width: 400px; 
-    margin: 0 10px; 
-    height: 70px;
+
+.navbar{
+    background-color: rgb(253, 188, 67) !important;
 }
 
 .nav-icon{
@@ -28,7 +19,7 @@
     margin: 0 !important;
 }
 
-.nav-link {
+.navbar-nav .nav-item .nav-link {
     white-space: nowrap; /* Prevent line breaks within links */
     margin-bottom: 4px;
     color: black;
@@ -37,8 +28,8 @@
     position: relative;
 }
 
-.nav-link:hover{
-    color: white;
+.navbar-nav .nav-item .nav-link:hover {
+    color: white; 
 }
 
 nav a{
@@ -46,7 +37,7 @@ nav a{
     padding-bottom: 5px;
 }
 
-nav a:not(.dropdown-toggle)::after{
+nav a:not(.dropdown-toggle, .navbar-brand)::after{
     content: '';
     display: block;
     height: 3px;
@@ -75,13 +66,7 @@ nav a:hover::after{
     background-color: transparent; /* Set the desired background color for the navbar */
 }
 
-.container-nav{
-    width: 100%; /* Set the container width to full viewport width */
-    background-color: rgb(253, 188, 67);
-    padding: 0; /* Remove default padding */
-    margin: 0 auto;
-    height: 70px;
-}
+
 
 @font-face {
     font-family: 'HebrewVarela'; /* Choose a suitable name for the font family */
@@ -106,7 +91,45 @@ nav .dropdown-menu .dropdown-item[href="#"]:hover::before {
   width: 100%;
   background-color: white;
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   transition: all ease-in-out 250ms;
 }
+
+.navbar-toggler-custom {
+    max-width: 50px; 
+}
+
+.navbar-brand img {
+    max-height: 40px; 
+    max-width: 100%; 
+}
+  
+@media (max-width: 767.98px) {
+    .logo-container {
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .navbar-collapse.collapsing ~ .logo-container {
+      width: auto;
+      justify-content: flex-start;
+    }
+
+    .navbar .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        bottom: 0;
+        width: 50%; 
+        max-width: 300px; 
+        transition: right 0.3s;
+        z-index: 1000;
+        background-color: rgb(253, 188, 67);
+      }
+    
+    .navbar .navbar-toggler[aria-expanded="true"] + .navbar-collapse {
+        right: 0; /* Show the collapsed navbar when the toggler is active */
+    }
+}
+  
   
