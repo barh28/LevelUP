@@ -1,72 +1,84 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
-    <link rel="icon" href="./levelupLogo.png">
+    <link rel="icon" href="./logo.png">
     <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
     <title>מומחים באיתור נדל״ן | LevelUP</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-     
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item nav-icon">
-              <a href="https://waze.com/ul?ll=31.06574525,35.02091065&navigate=yes" target="_blank" class="nav-link">
-                <i class="bi bi-geo-alt-fill"></i>
-              </a>
-            </li>
-            <li class="nav-item nav-icon">
-              <a class="nav-link" target="_blank" href="https://api.whatsapp.com/send?phone=9720542282313&text=%D7%94%D7%99%D7%99%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9B%D7%93%D7%99%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9B%D7%9D%20%D7%95%D7%A2%D7%9C%20%D7%AA%D7%94%D7%9C%D7%99%D7%9A%20%D7%A8%D7%9B%D7%99%D7%A9%D7%94%20%D7%91LevelUP%20%D7%93%D7%99%D7%9E%D7%95%D7%A0%D7%94%20%F0%9F%98%8A">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </li>
-            <li class="nav-item nav-icon">
-              <a class="nav-link" target="_blank" href="https://www.facebook.com/LevelUPdimona">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">דרושים</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">השירותים שלנו</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">צרו קשר</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">LevelUP משפחת</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">קצת עלינו</a>
-            </li>
-            <li>
-              <div class="logo-container">
-                <a class="navbar-brand" href="#">
-                  <img src="./levelupLogo.png" alt="" width="120px" height="auto">
-                </a>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <div class="hero">
+        <nav>
+            
+            <ul>
+                <li>
+                    <a href="https://waze.com/ul?ll=31.06574525,35.02091065&navigate=yes" target="_blank">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=9720542282313&text=%D7%94%D7%99%D7%99%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9B%D7%93%D7%99%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9B%D7%9D%20%D7%95%D7%A2%D7%9C%20%D7%AA%D7%94%D7%9C%D7%99%D7%9A%20%D7%A8%D7%9B%D7%99%D7%A9%D7%94%20%D7%91LevelUP%20%D7%93%D7%99%D7%9E%D7%95%D7%A0%D7%94%20%F0%9F%98%8A">
+                      <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/LevelUPdimona">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                  </li>
+                <li><a href="#">צרו קשר</a></li>
+                <li><a href="#">דרושים</a></li>
+                <li><a href="#">השירותים שלנו</a></li>
+                <li><a href="#">LevelUP משפחת</a></li>
+                <li><a href="#">קצת עלינו</a></li>
+                <li>
+                    <a href="#" onclick="toggleMenu()">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                </li>
+            </ul>
+            <img src="./logo.png" class="logo" alt="LevelUP">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu" id="subMenuInfo">
+                    <div class="user-info">
+                        <h3>שם משתמש</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <span><</span>                      
+                        <p>עריכת פרופיל</p>
+                        <i class="bi bi-person-fill"></i> 
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <span><</span>                    
+                        <p>הגדרות & פרטיות</p>
+                        <i class="bi bi-gear-fill"></i>    
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <span><</span>
+                        <p>עזרה & תמיכה</p>
+                        <i class="bi bi-question-circle-fill"></i>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <span><</span>
+                        <p>התנתקות</p>
+                        <i class="bi bi-door-open-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </div>
-  </nav>
-    <div>
-      <img src="./mainPhoto.jpeg" alt="LevelUP" width="100%">
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>

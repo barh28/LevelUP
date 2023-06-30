@@ -1,135 +1,168 @@
-.nav-item{
-    margin-right: 70px;
-    margin-left: 50px;
-    margin-top: 10px;
-    padding: 0px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.navbar{
-    background-color: rgb(253, 188, 67) !important;
-}
-
-.nav-icon{
-    margin-right: 0px;
+*{
     margin: 0;
-}
-
-.nav-link .bi{
-    margin: 0 !important;
-}
-
-.navbar-nav .nav-item .nav-link {
-    white-space: nowrap; /* Prevent line breaks within links */
-    margin-bottom: 4px;
-    color: black;
+    padding: 0;
     font-family: 'HebrewHebboBold';
-    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(./backgroungKwL.png); */
+    background-color: rgb(240, 239, 239);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #525252;
+}
+
+nav{
+    background: rgb(253, 188, 67);
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: white; 
+.logo{
+    width: 120px;
+    cursor: pointer;
 }
 
-nav a{
-    position: relative;
-    padding-bottom: 5px;
+/* .user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+} */
+
+nav ul{
+    width: 100%;
+    text-align: center;
 }
 
-nav a:not(.dropdown-toggle, .navbar-brand)::after{
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a::after{
     content: '';
     display: block;
     height: 3px;
     width: 0%;
     background-color: white;
-    bottom: -2px;;
+    bottom: -4px;;
     transition: all ease-in-out 250ms;
 }
 
-nav li.dropdown:hover > a::after {
-    width: 0; 
+nav ul li a:hover{
+    color: white;
 }
 
-nav a:hover::after{
+nav ul li a:hover::after{
     width: 100%;
 }
 
-.navbar-nav {
-    width: 100%;
+nav ul li .bi {
+    margin: 0 5px !important;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
     display: flex;
-    justify-content: center; /* Center the navbar links horizontally */
     align-items: center;
 }
 
-.navbar {
-    background-color: transparent; /* Set the desired background color for the navbar */
+.user-info h3{
+    font-weight: 500;
 }
 
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
 
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+.sub-menu-link i{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transfom 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link p{
+    text-align: right;
+    font-family: 'HebrewHebboMedium';
+}
+
+.sub-menu-link:hover p{
+    font-family: 'HebrewHebboBold';
+}
 
 @font-face {
-    font-family: 'HebrewVarela'; /* Choose a suitable name for the font family */
-    src: url('fonts/VarelaRound-Regular.ttf') format('truetype');
-    font-family: 'HebrewSecular';
-    src: url(./SecularOne-Regular.ttf) format('truetype');
-    font-family: 'HebrewGanclm';
-    src: url('fonts/ganclm_bold-webfont.ttf') format('truetype'),
-         url('fonts/ganclm_bold-webfont.woff') format('woff');
+    font-family: 'HebrewHebboMedium';
+    src: url('./Fonts/Heebo-Medium.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'HebrewHebboBold';
-    src: url('./fonts/Heebo-Bold.ttf');
+    src: url('./fonts/Heebo-Bold.ttf') format('truetype'); 
 }
-
-nav .dropdown-menu a:hover {
-  text-decoration: underline; /* Apply underline to the dropdown menu items on hover */
-}
-
-nav .dropdown-menu .dropdown-item[href="#"]:hover::before {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  bottom: -4px;
-  transition: all ease-in-out 250ms;
-}
-
-.navbar-toggler-custom {
-    max-width: 50px; 
-}
-
-.navbar-brand img {
-    max-height: 40px; 
-    max-width: 100%; 
-}
-  
-@media (max-width: 767.98px) {
-    .logo-container {
-      width: 100%;
-      justify-content: center;
-    }
-    
-    .navbar-collapse.collapsing ~ .logo-container {
-      width: auto;
-      justify-content: flex-start;
-    }
-
-    .navbar .navbar-collapse {
-        position: fixed;
-        top: 0;
-        right: -100%; 
-        bottom: 0;
-        width: 50%; 
-        max-width: 300px; 
-        transition: right 0.3s;
-        z-index: 1000;
-        background-color: rgb(253, 188, 67);
-      }
-    
-    .navbar .navbar-toggler[aria-expanded="true"] + .navbar-collapse {
-        right: 0; /* Show the collapsed navbar when the toggler is active */
-    }
-}
-  
-  
