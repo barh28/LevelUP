@@ -12,7 +12,6 @@
     background-color: rgb(240, 239, 239);
     background-repeat: no-repeat;
     background-size: 100%;
-    color: #525252;
 }
 
 nav{
@@ -215,13 +214,39 @@ form{
     opacity: 1;
   }
   
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
   .signin {
     background-color: #f1f1f1;
     text-align: center;
+  }
+
+  .footer-wrap{
+    text-align: center;
+    background-color: rgb(253, 188, 67);
+  }
+
+  .footer-list-up, .footer-list-nav{
+    margin: 5px;
+    justify-content: space-between;
+    direction: rtl;
+    padding-bottom: 20px;
+  }
+
+  .footer-logo img{
+    width: 150px;
+  }
+
+  .footer-list-up a, .footer-list-nav a{
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid black;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+  }
+
+  .footer-list-nav a:hover, .footer-list-up a:hover{
+    color: white;
+  }
+
+  .bottom{
+    background-color: rgb(240, 239, 239);
   }
