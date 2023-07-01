@@ -193,7 +193,7 @@ form{
   }
   
   /* Set a style for the submit button */
-  .registerbtn {
+  .formbtn {
     background-color: #fd904d;
     color: white;
     padding: 16px 20px;
