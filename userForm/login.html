@@ -1,111 +1,133 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../photos/logo.png">
-    <link rel="stylesheet" href="../style.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../photos/logo.png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <title>מומחים באיתור נדל״ן | LevelUP</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="hero">
-          <nav>
-              
-              <ul>
-                  <li>
-                      <a href="https://waze.com/ul?ll=31.06574525,35.02091065&navigate=yes" target="_blank">
-                        <i class="bi bi-geo-alt-fill"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://api.whatsapp.com/send?phone=9720542282313&text=%D7%94%D7%99%D7%99%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9B%D7%93%D7%99%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9B%D7%9D%20%D7%95%D7%A2%D7%9C%20%D7%AA%D7%94%D7%9C%D7%99%D7%9A%20%D7%A8%D7%9B%D7%99%D7%A9%D7%94%20%D7%91LevelUP%20%D7%93%D7%99%D7%9E%D7%95%D7%A0%D7%94%20%F0%9F%98%8A">
-                        <i class="bi bi-whatsapp"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="https://www.facebook.com/LevelUPdimona">
-                        <i class="bi bi-facebook"></i>
-                      </a>
-                    </li>
-                  <li><a href="#">צרו קשר</a></li>
-                  <li><a href="#">דרושים</a></li>
-                  <li><a href="#">השירותים שלנו</a></li>
-                  <li><a href="#">LevelUP משפחת</a></li>
-                  <li><a href="#">קצת עלינו</a></li>
-                  <li>
-                      <a href="#" onclick="toggleMenu()">
-                          <i class="bi bi-person-fill"></i>
-                      </a>
-                  </li>
-              </ul>
-              <a href="../index.html">
-                <img src="../photos/logo.png" class="logo" alt="LevelUP">
+      <div class="hero">
+        <nav>
+          <ul class="icons-left">
+            <li>
+              <a
+                href="https://waze.com/ul?ll=31.06574525,35.02091065&navigate=yes"
+                target="_blank"
+              >
+                <i class="bi bi-geo-alt-fill"></i>
               </a>
-    
-              <div class="sub-menu-wrap" id="subMenu">
-                  <div class="sub-menu" id="subMenuInfo">
-                      <div class="user-info" style="margin: 0;">
-                          <h3 id="userNameMenu">        שם משתמש</h3>
-                      </div>
-                      <hr>
-                      <a href="#" class="sub-menu-link">
-                          <span><</span>                      
-                          <p>עריכת פרופיל</p>
-                          <i class="bi bi-person-fill"></i> 
-                      </a>
-                      <a href="#" class="sub-menu-link">
-                          <span><</span>                    
-                          <p>הגדרות & פרטיות</p>
-                          <i class="bi bi-gear-fill"></i>    
-                      </a>
-                      <a href="#" class="sub-menu-link">
-                          <span><</span>
-                          <p>עזרה & תמיכה</p>
-                          <i class="bi bi-question-circle-fill"></i>
-                      </a>
-                      <a href="#" class="sub-menu-link" id="logOutDrop">
-                          <span><</span>
-                          <p>התנתקות</p>
-                          <i class="bi bi-door-open-fill"></i>
-                      </a>
-                  </div>
-    
-                  <div class="sub-menu" id="subMenuStart">
-                    <div class="user-info">
-                      <h3>!היי אורח</h3>
-                    </div>
-                    <hr>
-                    <a href="./login.html" class="sub-menu-link">
-                        <span><</span>                      
-                        <p>התחבר</p>
-                        <i class="bi bi-person"></i> 
-                    </a>
-                    <a href="./register.html" class="sub-menu-link">
-                        <span><</span>                    
-                        <p>הירשם</p>
-                        <i class="bi bi-person-plus-fill"></i>   
-                    </a>
-                </div>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=9720542282313&text=%D7%94%D7%99%D7%99%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A9%D7%99%D7%97%D7%94%20%D7%9B%D7%93%D7%99%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D%20%D7%A9%D7%9C%D7%9B%D7%9D%20%D7%95%D7%A2%D7%9C%20%D7%AA%D7%94%D7%9C%D7%99%D7%9A%20%D7%A8%D7%9B%D7%99%D7%A9%D7%94%20%D7%91LevelUP%20%D7%93%D7%99%D7%9E%D7%95%D7%A0%D7%94%20%F0%9F%98%8A"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/LevelUPdimona">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-center">
+            <li><a href="#">צרו קשר</a></li>
+            <li><a href="#">דרושים</a></li>
+            <li><a href="#">השירותים שלנו</a></li>
+            <li><a href="#">LevelUP משפחת</a></li>
+            <li><a href="#">קצת עלינו</a></li>
+          </ul>
+          <a href="#" onclick="toggleMenu()">
+            <i class="bi bi-person-fill"></i>
+          </a>
+          <a href="../index.html">
+            <img src="../photos/logo.png" class="logo" alt="LevelUP" />
+          </a>
+
+          <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu" id="subMenuInfo">
+              <div class="user-info" style="margin: 0">
+                <h3 id="userNameMenu">שם משתמש</h3>
               </div>
-          </nav>
-          <form action="">
-            <div class="form container">
-              <h1>התחבר</h1><hr>
-              <label for="user-name">:שם משתמש</label><br>
-              <input type="text" name="user-name" id="inputUserName" required dir="rtl"><br>
-              <label for="password">:ססמא</label><br>
-              <input type="password" name="password" id="passwordlogin" required dir="rtl"><hr>
-              <button type="submit" class="formbtn" id="loginbtn">התחבר</button>
+              <hr />
+              <a href="#" class="sub-menu-link">
+                <span><</span>
+                <p>עריכת פרופיל</p>
+                <i class="bi bi-person-fill"></i>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <span><</span>
+                <p>הגדרות & פרטיות</p>
+                <i class="bi bi-gear-fill"></i>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <span><</span>
+                <p>עזרה & תמיכה</p>
+                <i class="bi bi-question-circle-fill"></i>
+              </a>
+              <a href="#" class="sub-menu-link" id="logOutDrop">
+                <span><</span>
+                <p>התנתקות</p>
+                <i class="bi bi-door-open-fill"></i>
+              </a>
             </div>
-            <div class="container signin">
-              <p>.אין לך עדיין משתמש?<a href="./register.html">הירשם</a></p>
+
+            <div class="sub-menu" id="subMenuStart">
+              <div class="user-info">
+                <h3>!היי אורח</h3>
+              </div>
+              <hr />
+              <a href="./login.html" class="sub-menu-link">
+                <span><</span>
+                <p>התחבר</p>
+                <i class="bi bi-person"></i>
+              </a>
+              <a href="./register.html" class="sub-menu-link">
+                <span><</span>
+                <p>הירשם</p>
+                <i class="bi bi-person-plus-fill"></i>
+              </a>
             </div>
-          </form> 
+          </div>
+        </nav>
+        <form action="">
+          <div class="form container">
+            <h1>התחבר</h1>
+            <hr />
+            <label for="user-name">:שם משתמש</label><br />
+            <input
+              type="text"
+              name="user-name"
+              id="inputUserName"
+              required
+              dir="rtl"
+            /><br />
+            <label for="password">:ססמא</label><br />
+            <input
+              type="password"
+              name="password"
+              id="passwordlogin"
+              required
+              dir="rtl"
+            />
+            <hr />
+            <button type="submit" class="formbtn" id="loginbtn">התחבר</button>
+          </div>
+          <div class="container signin">
+            <p>.אין לך עדיין משתמש?<a href="./register.html">הירשם</a></p>
+          </div>
+        </form>
       </div>
     </header>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
