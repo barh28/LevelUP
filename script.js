@@ -29,3 +29,8 @@ if(a){
        location.reload();
     })
 }
+
+document.querySelector(".dropdown").addEventListener("click",function(){
+    const dropdown = document.querySelector(".dropdown");
+    dropdown.classList.toggle("open");
+})

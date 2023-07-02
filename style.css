@@ -1,252 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'HebrewHebboBold';
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "HebrewHebboBold";
+  box-sizing: border-box;
 }
 
-.hero{
-    width: 100%;
-    min-height: 100vh;
-    /* background-image: url(./backgroungKwL.png); */
-    background-color: rgb(240, 239, 239);
-    background-repeat: no-repeat;
-    background-size: 100%;
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* background-image: url(./backgroungKwL.png); */
+  background-color: rgb(240, 239, 239);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-nav{
-    background: rgb(253, 188, 67);
-    width: 100%;
-    padding: 10px 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+nav {
+  background: rgb(253, 188, 67);
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.logo{
-    width: 120px;
-    cursor: pointer;
+.logo {
+  width: 120px;
+  cursor: pointer;
 }
 
-/* .user-pic{
-    width: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 30px;
-} */
-
-nav .navbar-center{
-    width: 70%;
-    text-align: center;
+nav .navbar-center {
+  width: 70%;
+  text-align: center;
 }
 
-nav .icons-left{
-    width: 10%;
-    text-align: center;
+nav .icons-left {
+  width: 10%;
+  text-align: center;
 }
 
-nav .navbar-center li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 30px;
+nav .navbar-center li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
 }
 
-nav .icons-left li{
-    display: inline-block;
-    list-style: none;
-    margin: 0 3px;
+nav .icons-left li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 3px;
 }
 
-nav ul li a, .bi-person-fill{
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
+nav ul li a,
+.bi-person-fill {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-nav ul li a::after, .bi-person-fill::after{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: white;
-    bottom: -4px;;
-    transition: all ease-in-out 250ms;
+nav ul li a::after,
+.bi-person-fill::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  bottom: -4px;
+  transition: all ease-in-out 250ms;
 }
 
-nav ul li a:hover, .bi-person-fill:hover{
-    color: white;
+nav ul li a:not(.dropdown-a):hover,
+.bi-person-fill:hover {
+  color: white;
 }
 
-nav ul li a:hover::after, .bi-person-fill:hover::after{
-    width: 100%;
+nav ul li a:not(.dropdown-a):hover::after,
+.bi-person-fill:hover::after {
+  width: 100%;
 }
 
-.sub-menu-wrap{
-    position: absolute;
-    top: 100%;
-    right: 10%;
-    width: 320px;
-    max-height: 0px;
-    overflow: auto;
-    transition: max-height 0.5s;
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: auto;
+  transition: max-height 0.5s;
 }
 
-.sub-menu-wrap.open-menu{
-    max-height: 400px;
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
 }
 
-.sub-menu{
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
 }
 
 .user-info {
-    text-align: center;
+  text-align: center;
 }
 
-.sub-menu hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 10px;
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 10px;
 }
 
-.sub-menu-link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #525252;
-    margin: 12px 0;
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
 }
 
-.sub-menu-link p{
-    width: 100%;
+.sub-menu-link p {
+  width: 100%;
 }
 
-.sub-menu-link i{
-    width: 40px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 8px;
-    margin-left: 15px;
+.sub-menu-link i {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: 15px;
 }
 
-.sub-menu-link span{
-    font-size: 22px;
-    transition: transfom 0.5s;
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transfom 0.5s;
 }
 
-.sub-menu-link:hover span{
-    transform: translateX(5px);
+.sub-menu-link:hover span {
+  transform: translateX(5px);
 }
 
-.sub-menu-link p{
-    text-align: right;
-    font-family: 'HebrewHebboMedium';
+.sub-menu-link p {
+  text-align: right;
+  font-family: "HebrewHebboMedium";
 }
 
-.sub-menu-link:hover p{
-    font-family: 'HebrewHebboBold';
+.sub-menu-link:hover p {
+  font-family: "HebrewHebboBold";
 }
 @font-face {
-    font-family: 'HebrewHebboMedium';
-    src: url('./Fonts/Heebo-Medium.ttf') format('truetype');
+  font-family: "HebrewHebboMedium";
+  src: url("./Fonts/Heebo-Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'HebrewHebboBold';
-    src: url('./Fonts/Heebo-Bold.ttf') format('truetype'); 
+  font-family: "HebrewHebboBold";
+  src: url("./Fonts/Heebo-Bold.ttf") format("truetype");
 }
 
-form{
-    text-align: right;
+form {
+  text-align: right;
+}
+
+/*Dropdown css*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 /** Register css */
-
-/* Add padding to containers */
-
 .container {
-    padding: 16px;
-    background-color: white;
-    width: 50%;
-    margin: auto;
-    margin-top: 5px;
+  padding: 16px;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  margin-top: 5px;
 }
-  
-  /* Full-width input fields */
-  input{
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  form hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  
-  /* Set a style for the submit button */
-  .formbtn {
-    background-color: #fd904d;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  
-  .signin {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-  .footer-wrap{
-    text-align: center;
-    background-color: rgb(253, 188, 67);
-  }
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
 
-  .footer-list-up, .footer-list-nav{
-    margin: 5px;
-    justify-content: space-between;
-    direction: rtl;
-    padding-bottom: 20px;
-  }
+form hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
 
-  .footer-logo img{
-    width: 150px;
-  }
+.formbtn {
+  background-color: #fd904d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
-  .footer-list-up a, .footer-list-nav a{
-    text-decoration: none;
-    color: black;
-    border-left: 2px solid black;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-  }
+.registerbtn:hover {
+  opacity: 1;
+}
 
-  .footer-list-nav a:hover, .footer-list-up a:hover{
-    color: white;
-  }
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
 
-  .bottom{
-    background-color: rgb(240, 239, 239);
-  }
+.footer-wrap {
+  text-align: center;
+  background-color: rgb(253, 188, 67);
+}
+
+.footer-list-up,
+.footer-list-nav {
+  margin: 5px;
+  justify-content: space-between;
+  direction: rtl;
+  padding-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-list-up a,
+.footer-list-nav a {
+  text-decoration: none;
+  color: black;
+  border-left: 2px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+
+.footer-list-nav a:hover,
+.footer-list-up a:hover {
+  color: white;
+}
+
+.bottom {
+  background-color: rgb(240, 239, 239);
+}
