@@ -1,5 +1,7 @@
 const subMenuInfo = document.getElementById("subMenuInfo");
 const subMenuDynamic = document.getElementById("subMenuStart");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar-center");
 
 function toggleMenu(){
     var userName = localStorage.getItem("userName");
@@ -34,3 +36,14 @@ document.querySelector(".dropdown").addEventListener("click",function(){
     const dropdown = document.querySelector(".dropdown");
     dropdown.classList.toggle("open");
 })
+
+hamburger.addEventListener("click",function(){
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => 
+    n.addEventListener("click",function(){
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }))
