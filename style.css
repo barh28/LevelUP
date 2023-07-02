@@ -37,12 +37,12 @@
   }
 
   .footer-logo img {
-    width: 100px !important;
+    width: 80px !important;
   }
 
   .footer-list-up a,
   .footer-list-nav a {
-    font-size: 8px !important;
+    font-size: 7px !important;
   }
 
   .hamburger {
