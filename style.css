@@ -60,6 +60,11 @@
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .card{
+    width: 80% !important;
+    position: fixed;
+  }
 }
 
 @media screen and (max-width: 2000px) {
@@ -88,10 +93,9 @@
 
   .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     /* background-image: url(./backgroungKwL.png); */
     background-color: rgb(240, 239, 239);
-    background-repeat: no-repeat;
     background-size: 100%;
   }
 
@@ -179,6 +183,7 @@
     background: #fff;
     padding: 20px;
     margin: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   }
 
   .user-info {
@@ -288,7 +293,8 @@
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
+  /* check if i have that */
+  .dropdown:hover .dropbtn { 
     background-color: #3e8e41;
   }
 
@@ -320,7 +326,7 @@
     margin-bottom: 25px;
   }
 
-  .formbtn {
+  .formbtn{
     background-color: #fd904d;
     color: white;
     padding: 16px 20px;
@@ -329,6 +335,21 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+  }
+
+  #uploadHtmlbtn{
+    background-color: #fd904d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+    width: 10%;
+    opacity: 0.8;
+    display: none;
+  }
+
+  #uploadHtmlbtn:hover{
+    opacity: 1;
   }
 
   .registerbtn:hover {
@@ -375,3 +396,84 @@
     background-color: rgb(240, 239, 239);
   }
 }
+
+.family-container{
+    text-align: center;
+    background-color: #fd904d; 
+    /* TODO - background from daniel  */
+}
+
+.family-upper{
+    min-height: 35vh;
+    justify-content: space-between;
+}
+
+.family-cards{
+    min-height: 200vh;
+    background-color: rgb(240, 239, 239);
+}
+
+.family-upper h1{
+    padding-top: 50px;
+}
+
+.family-upper p{
+    padding: 15px;
+}
+
+.fambtn{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.8;
+}
+
+.fambtn:hover{
+    opacity: 1;
+}
+
+.flip-card {
+    display: inline-block;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    padding-top: 30px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #fd904d;;
+    color: white;
+    transform: rotateY(180deg);
+  }

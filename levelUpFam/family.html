@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <div class="hero">
+      <!-- <div class="hero"> -->
         <nav>
           <a href="../index.html">
             <img src="../photos/logo.png" class="logo" alt="LevelUP" />
@@ -31,7 +31,7 @@
                   >השירותים שלנו <i class="arrow down"></i
                 ></a>
                 <div class="dropdown-content">
-                  <a class="dropdown-a" href="../buy&sell/properties.html">קניית/מכירת נכסים</a>
+                  <a class="dropdown-a" href="#">קניית/מכירת נכסים</a>
                   <a class="dropdown-a" href="">שיפוץ והשבחת נכסים</a>
                   <a class="dropdown-a" href="">שכירויות</a>
                   <a class="dropdown-a" href="">השקעות נדל״ן</a>
@@ -39,7 +39,7 @@
                 </div>
               </div>
             </li>
-            <li><a class="nav-link" href="../levelUpFam/family.html">משפחת LevelUP</a></li>
+            <li><a class="nav-link" href="#">משפחת LevelUP</a></li>
             <li><a class="nav-link" href="#">קצת עלינו</a></li>
           </ul>
           <ul class="icons-left">
@@ -104,12 +104,12 @@
                 <h3>היי אורח!</h3>
               </div>
               <hr />
-              <a href="./login.html" class="sub-menu-link">
+              <a href="../userForm/login.html" class="sub-menu-link">
                 <i class="bi bi-person"></i>
                 <p>התחבר</p>
                 <span>></span>
               </a>
-              <a href="./register.html" class="sub-menu-link">
+              <a href="../userForm/register.html" class="sub-menu-link">
                 <i class="bi bi-person-plus-fill"></i>
                 <p>הירשם</p>
                 <span>></span>
@@ -117,72 +117,46 @@
             </div>
           </div>
         </nav>
-        <form action="">
-          <div class="form container">
-            <h1>הירשם</h1>
-            <p>אנא מלא את כל השדות בכדי ליצור את המשתמש</p>
-            <hr />
-            <label for="first-name">שם פרטי:</label><br />
-            <input
-              type="text"
-              name="first-name"
-              id="firstName"
-              required
-              dir="rtl"
-            /><br />
-            <label for="last-name">שם משפחה:</label><br />
-            <input
-              type="text"
-              name="last-name"
-              id="lastName"
-              required
-              dir="rtl"
-            /><br />
-            <label for="phone-number">מספר טלפון:</label><br />
-            <input
-              type="tel"
-              name="phone-number"
-              id="phoneNumber"
-              required
-              dir="rtl"
-            /><br />
-            <label for="email">כתובת אימייל:</label><br />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder="user@example.com"
-              dir="rtl"
-            /><br />
-            <label for="user-name">שם משתמש:</label><br />
-            <input
-              type="text"
-              name="user-name"
-              id="userName"
-              required
-              dir="rtl"
-            /><br />
-            <label for="password">סיסמא:</label><br />
-            <input
-              type="password"
-              name="password"
-              id="password"
-              required
-              dir="rtl"
-            />
-            <hr />
-            <p>ביצירת המשתמש הינך מאשר את <a href="">התקנון ותנאי השימוש</a></p>
-            <button type="submit" class="formbtn" id="registerbtn">
-              הירשם
-            </button>
-          </div>
-          <div class="container signin">
-            <p>יש לך כבר משתמש? <a href="./login.html">התחבר.</a></p>
-          </div>
-        </form>
-      </div>
+        
+      <!-- </div> -->
     </header>
+
+    <div class="family-container">
+        <div class="family-upper">
+            <h1>המשפחה שלנו</h1>
+            <p>משפחת LevelUP מונה כיום סוכנים ובעלי מקצוע מנוסים <br>
+                שעברו הכשרה מקצועית מטעם kw-israel. 
+            </p>
+            <button type="button" class="fambtn">רוצים לעבוד איתנו?</button>
+        </div>
+        <div class="family-cards">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./daniel.jpeg" alt="Daniel" style="width:300px;height:300px;">
+                    <p>דניאל לנדר</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>דניאל לנדר</h1> 
+                    <p>מנכ״ל ומייסד החברה</p> 
+                  </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./zohar.jpeg" alt="Daniel" style="width:300px;height:300px;">
+                    <p>זוהר טישלר</p>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>זוהר טישלר</h1> 
+                    <p>מנכ״ל ומייסד החברה</p> 
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer>
       <div class="footer-wrap">
         <div class="footer-logo">
@@ -190,13 +164,13 @@
         </div>
         <div class="footer-list">
           <div class="footer-list-up">
-            <a href="../levelUpFam/family.html">משפחת LevelUP</a>
+            <a href="#">משפחת LevelUP</a>
             <a href="">דרושים</a>
             <a href="">קורס הנדל״ן שלנו</a>
             <a href="">דף הבית</a>
           </div>
           <div class="footer-list-nav">
-            <a href="../buy&sell/properties.html">קניית/מכירת נכסים</a>
+            <a href="#">קניית/מכירת נכסים</a>
             <a href="">שיפוץ והשבחת נכסים</a>
             <a href="">צרו קשר</a>
             <a href="">תקנון</a>
