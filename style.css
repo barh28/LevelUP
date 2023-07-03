@@ -61,10 +61,11 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .card{
-    width: 80% !important;
-    position: fixed;
+  .fambtn{
+    width: 30% !important;
   }
+
+
 }
 
 @media screen and (max-width: 2000px) {
