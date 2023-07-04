@@ -23,7 +23,7 @@
             <i class="bi bi-person-fill"></i>
           </a>
           <ul class="navbar-center">
-            <li><a class="nav-link" href="./contactUs.html">צרו קשר</a></li>
+            <li><a class="nav-link" href="#">צרו קשר</a></li>
             <li><a class="nav-link" href="#">דרושים</a></li>
             <li>
               <div class="dropdown">
@@ -119,29 +119,22 @@
         </nav>
         <form action="">
           <div class="form container">
-            <h1>התחבר</h1>
+            <h1>השאר פרטים ונחזור אלייך בהקדם</h1>
             <hr />
-            <label for="user-name">שם משתמש:</label><br />
-            <input
-              type="text"
-              name="user-name"
-              id="inputUserName"
+            <label for="user-name">שם מלא:</label><br />
+            <input type="text" name="user-name"
+              id="inputUserFullName"
               required
               dir="rtl"
             /><br />
-            <label for="password">סיסמא:</label><br />
-            <input
-              type="password"
-              name="password"
-              id="passwordlogin"
-              required
-              dir="rtl"
-            />
+            <label for="phonenum">מספר פלאפון:</label>
+            <input type="number" name="phonenum" id="phonenum" required>
+            <label for="subject">נושא:</label><br />
+            <input type="text" name="subject" id="subject"><br>
+            <label for="subjectdet">הערות נוספות:</label>
+            <textarea name="subjectdet" id="details" cols="95" rows="10"></textarea>
             <hr />
             <button type="submit" class="formbtn" id="loginbtn">התחבר</button>
-          </div>
-          <div class="container signin">
-            <p>אין לך עדיין משתמש?<a href="./register.html">הירשם.</a></p>
           </div>
         </form>
       </div>
@@ -161,7 +154,7 @@
           <div class="footer-list-nav">
             <a href="../buy&sell/properties.html">קניית/מכירת נכסים</a>
             <a href="">שיפוץ והשבחת נכסים</a>
-            <a href="./contactUs.html">צרו קשר</a>
+            <a href="#">צרו קשר</a>
             <a href="">תקנון</a>
           </div>
           <!-- <div class="bottom">
